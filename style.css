@@ -1,0 +1,73 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    background-color: #266DD3;
+    color: aliceblue;
+    max-width: 1200px;
+    font-size: x-large;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Lobster', cursive;
+}
+
+.container3{
+    background-color: #FFFCF7;
+}
+.section {
+    width: 30%;
+}
+.section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+.section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.section li {
+    margin-bottom: 15px; /* Aumenta la separación entre platillos */
+}
+
+.container2{
+    text-align: center;
+}
+
+#mainlogo{
+    width: 250px;
+    height: 250px;
+}
+
+#mainlogo2{
+    width: 250px;
+    height: 250px;
+}
+.logo {
+    list-style-type: none; /* Elimina los puntos de la lista */
+    padding: 0; /* Elimina el relleno predeterminado */
+    margin: 0 auto;
+    display: inline-block;
+
+}
+
+.logo li{
+    display: inline-block; /* Hace que los elementos <li> se muestren en línea */
+    vertical-align: middle; /* Alinea verticalmente los elementos */
+    margin-right: 20px;
+}
+.logo li h2 {
+    font-family: 'Lobster', cursive;
+    color: #63ADF2;
+}
+.logo li h3 {
+    font-family: 'Lobster', cursive;
+    color: #266DD3;
+}
