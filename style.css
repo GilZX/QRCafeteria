@@ -2,39 +2,51 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #5C95FF;
 }
 .container {
-    background-color: #266DD3;
+    background-color: #423D41;
     color: aliceblue;
     max-width: 1200px;
     font-size: x-large;
-    margin: 0 auto;
     padding: 20px;
     display: flex;
     justify-content: space-between;
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster';
 }
 
+
+.container section{
+    background-color: #266DD3;
+}
 .container3{
     background-color: #FFFCF7;
 }
 .section {
     width: 30%;
+    background-image: url(resources/fondo02.jpg);
+    border: #423D41;
+    border-radius: 10px;
 }
 .section h2 {
-    color: #333;
+    background-image: url(resources/cafe_animado.gif);
+    color: #E25D2E;;
+    -color: #333;
     font-size: 24px;
     margin-bottom: 20px;
-    border-bottom: 2px solid #333;
+    border-bottom: 2px solid #5C95FF;
     padding-bottom: 10px;
 }
 .section ul {
-    list-style-type: none;
+    list-style-type: circle;
     padding: 0;
-    margin: 0;
+    margin-left: 25px;
+    
 }
 .section li {
     margin-bottom: 15px; /* Aumenta la separación entre platillos */
+    
+    
 }
 
 .container2{
@@ -42,7 +54,7 @@ body {
 }
 
 #mainlogo{
-    width: 250px;
+    width: 650px;
     height: 250px;
 }
 
@@ -71,3 +83,52 @@ body {
     font-family: 'Lobster', cursive;
     color: #266DD3;
 }
+
+.container-menu{
+    background-color: #635255;
+}
+
+.contenedor {
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    height: 450px;
+   
+  }
+  
+  .imagen-container {
+    width: 25%; /* El 25% del ancho */
+  }
+  
+  .imagen-container img {
+    width: 100%;
+    height: 100%; /* La imagen ocupa todo el ancho del contenedor */
+  }
+  
+  .container {
+    width: 75%; /* El 75% del ancho */
+    height: 100%;
+  }
+  
+  .container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px; /* Ajusta el ancho máximo según tus necesidades */
+    max-height: 1500px;
+    margin: 0 auto;
+  }
+
+
+  
+  .image {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .active {
+    opacity: 1;
+  }
+  
+
+  

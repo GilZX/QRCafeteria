@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR-MENU-CAFETERIA</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-dfXKXzfn3jrOMXK6OiwQyU6TJm8P6wwL8q+NU6rL0FVtBw9zVzP+Q5tqSkoFNF8Z" crossorigin="anonymous">
+
+
+
+<
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -22,25 +29,35 @@
 
 
   <ul class="logo">
-    <li> <img  id="mainlogo" src="resources/main_logo.jpg"/></li>
-    <li> <h2>Centro</h2>
-      <h2>Ginecologico</h2>
-      <h3 style="font-weight: bold;">Somos parte de tu vida</h3>
-    </li>
+    <li> <img  id="mainlogo" src="resources/Logotipos-CentroGinecologico2023-09.png"/></li>
   </ul>
 
 </div>
 
-<div class="container3">
+<!--<div class="container3">
 
   <ul class="logo">
     <li> <img  id="mainlogo2" src="resources/menu.png"/></li>
     <li  style="color: brown; font-size: xx-large; font-family: 'Lobster', cursive;">Menu Del Dia</li>
     <li style="color: blue; font-family: 'Lobster'; font-size: x-large;">  Cafeteria  <i class="fas fa-phone"></i> 2247-1130/2247-1135
     </li>
+    <li><img src="resources/banner01.jpg" alt=""></li>
   </ul>
 
+</div>-->
+
+
+<div class="contenedor">
+
+
+<div class="imagen-container">
+  <div class="container">
+    <img src="resources/banner01.jpg" alt="Imagen 1" class="image active">
+    <img src="resources/banner02.jpg" alt="Imagen 2" class="image">
+    <img src="resources/banner03jpg.jpg" alt="Imagen 3" class="image">
+  </div>
 </div>
+
 
 <div class="container">
   <div class="section">
@@ -53,6 +70,7 @@
           <li>Rellenos De Coliflor</li>
 
       </ul>
+
   </div>
   <div class="section">
       <h2>Acompañamientos</h2>
@@ -65,7 +83,7 @@
       </ul>
   </div>
   <div class="section">
-      <h2><icon class="fa-solid fa-mug-hot"></icon> Bebidas</h2>
+    <h2><i class="fas fa-mug-hot"></i> Bebidas</h2>
       <ul>
           <li><i class="fa-solid fa-mug-hot"></i> Agua Mineral</li>
           <li><i class="fa-solid fa-mug-saucer"></i>Jugo de Naranja</li>
@@ -77,7 +95,7 @@
 </div>
 
 
-
+</div>
 
 
   
@@ -200,6 +218,18 @@ var despliegueMenu={}
       console.log("Bebidas:", bebidas);
 
 
+      document.addEventListener("DOMContentLoaded", function() {
+        const images = document.querySelectorAll(".image");
+        let index = 0;
+      
+        function showImage() {
+          images.forEach(img => img.classList.remove("active"));
+          images[index].classList.add("active");
+          index = (index + 1) % images.length;
+        }
+      
+        setInterval(showImage, 3000); // Cambia la imagen cada 3 segundos (ajusta según lo desees)
+      });
    
 
 
